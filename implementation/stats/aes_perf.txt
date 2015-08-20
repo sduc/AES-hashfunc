@@ -1,0 +1,10 @@
+Number of CPU cycles for the following AES operations:
+
+AES128 key schedule:
+90.803084
+AES192 key schedule:
+97.811300
+AES128 encrypt:
+29.652012
+AES192 encrypt:
+35.136124

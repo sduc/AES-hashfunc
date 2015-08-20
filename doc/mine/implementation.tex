@@ -1,0 +1,27 @@
+
+\documentclass[12pt,a4paper]{article}
+%\usepackage[margin=1.3in]{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+
+\usepackage{algorithm,algorithmicx,algpseudocode}
+
+\begin{document}
+
+\section{Implementation}
+In this section we present an implementation of hash function using the three parallel call block cipher based compression function.
+The implementation uses a four-core Intel Westmere CPU and makes use of the AES instruction set~\cite{intel-aes}.
+Finally we use cycles per bytes to benchmark our implementation and we compare it with the other implementation that used only two parallel call of a block cipher.
+The measure are done as described in~\cite{efficient-hash}.
+\subsection{Overview}
+To implement the hash function by making use of the block cipher based compression function we apply the Merkle-Damg\aa rd construction.
+
+\subsection{Parallelization}
+Let us describe more in detailed how we parallelized the hash function over a four-core CPU.
+\subsection{Benchmarking}
+
+\bibliographystyle{plain}
+\bibliography{bibliography}
+
+\end{document}

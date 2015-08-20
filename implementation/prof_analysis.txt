@@ -1,0 +1,393 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ns/call  ns/call  name    
+ 22.81      1.98     1.98                             STD_Pre_Proc.omp_fn.3 (hash.c:179 @ 401140)
+  6.97      2.59     0.61                             AES_Proc.omp_fn.1 (hash.c:92 @ 400df0)
+  5.30      3.05     0.46                             _mm_aesenc_si128 (wmmintrin.h:62 @ 402030)
+  4.44      3.43     0.39                             STD_Post_Proc.omp_fn.2 (hash.c:228 @ 400ee0)
+  3.92      3.77     0.34                             FIRST_Pre_Proc.omp_fn.0 (hash.c:138 @ 400de1)
+  3.57      4.08     0.31                             AES_Proc.omp_fn.1 (hash.c:92 @ 400edb)
+  2.65      4.31     0.23                             STD_Post_Proc.omp_fn.2 (hash.c:228 @ 401134)
+  2.48      4.53     0.22                             STD_Post_Proc.omp_fn.2 (hash.c:228 @ 400f09)
+  2.07      4.71     0.18                             _mm_clmulepi64_si128 (wmmintrin.h:108 @ 4010bc)
+  1.79      4.87     0.16                             AES_Proc.omp_fn.1 (hash.c:112 @ 400e50)
+  1.79      5.02     0.16                             _mm_clmulepi64_si128 (wmmintrin.h:108 @ 401043)
+  1.61      5.16     0.14                             _mm_clmulepi64_si128 (wmmintrin.h:108 @ 4011c3)
+  1.56      5.30     0.14                             F64_mult_efficient (field_op.h:42 @ 401030)
+  1.56      5.43     0.14                             STD_Post_Proc.omp_fn.2 (hash.c:237 @ 4010b8)
+  1.44      5.56     0.13                             STD_Post_Proc.omp_fn.2 (hash.c:235 @ 401040)
+  1.15      5.66     0.10                             STD_Pre_Proc.omp_fn.3 (hash.c:179 @ 401182)
+  1.15      5.76     0.10                             _mm_clmulepi64_si128 (wmmintrin.h:108 @ 4012c3)
+  0.92      5.84     0.08                             AES_Proc.omp_fn.1 (hash.c:98 @ 400e90)
+  0.86      5.91     0.08                             AES_Proc.omp_fn.1 (hash.c:104 @ 400eb0)
+  0.86      5.99     0.08                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402537)
+  0.86      6.06     0.08                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 40257a)
+  0.81      6.13     0.07                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402252)
+  0.69      6.19     0.06                             AES_Proc (hash.c:92 @ 401b1c)
+  0.69      6.25     0.06                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402186)
+  0.69      6.31     0.06                             _mm_clmulepi64_si128 (wmmintrin.h:108 @ 400f43)
+  0.69      6.37     0.06                             _mm_clmulepi64_si128 (wmmintrin.h:108 @ 400fcb)
+  0.69      6.43     0.06                             _mm_loadu_si128 (emmintrin.h:685 @ 40234d)
+  0.58      6.48     0.05                             STD_Pre_Proc.omp_fn.3 (hash.c:179 @ 40116f)
+  0.58      6.53     0.05                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 40221f)
+  0.58      6.58     0.05                             _mm_clmulepi64_si128 (wmmintrin.h:108 @ 40124e)
+  0.52      6.63     0.05                             STD_Post_Proc.omp_fn.2 (hash.c:231 @ 400f40)
+  0.52      6.67     0.05                             STD_Post_Proc.omp_fn.2 (hash.c:228 @ 400faf)
+  0.52      6.72     0.05                             STD_Post_Proc.omp_fn.2 (hash.c:233 @ 400fc8)
+  0.52      6.76     0.05                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402285)
+  0.52      6.81     0.05                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402490)
+  0.52      6.85     0.05                             _mm_slli_si128 (emmintrin.h:1155 @ 40228b)
+  0.52      6.90     0.05                             _mm_xor_si128 (emmintrin.h:1251 @ 402496)
+  0.46      6.94     0.04                             AES_Decrypt (aes_encryption.c:30 @ 4020dd)
+  0.46      6.98     0.04                             _mm_aesenclast_si128 (wmmintrin.h:70 @ 402046)
+  0.46      7.02     0.04                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4022ee)
+  0.46      7.06     0.04                             _mm_extract_epi64 (smmintrin.h:455 @ 400f60)
+  0.46      7.10     0.04                             _mm_extract_epi64 (smmintrin.h:455 @ 4010d9)
+  0.40      7.13     0.04                             _mm_extract_epi64 (smmintrin.h:455 @ 401061)
+  0.35      7.16     0.03 16544603     1.82     1.82  AES_Encrypt (aes_encryption.c:5 @ 401ff0)
+  0.35      7.19     0.03                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402153)
+  0.35      7.22     0.03                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4022b8)
+  0.35      7.25     0.03                             _mm_slli_si128 (emmintrin.h:1155 @ 4022be)
+  0.35      7.28     0.03                             _mm_xor_si128 (emmintrin.h:1251 @ 402015)
+  0.35      7.31     0.03                             _mm_xor_si128 (emmintrin.h:1251 @ 40217a)
+  0.29      7.34     0.03                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4021ec)
+  0.29      7.36     0.03                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 40242c)
+  0.29      7.39     0.03                             _mm_slli_si128 (emmintrin.h:1155 @ 4021f2)
+  0.29      7.41     0.03                             _mm_xor_si128 (emmintrin.h:1251 @ 402432)
+  0.23      7.43     0.02 11469786     1.75     1.75  AES_128_Key_Expansion (aes_key_expansion.c:20 @ 4020f0)
+  0.23      7.45     0.02                             AES_128_Key_Expansion (aes_key_expansion.c:56 @ 402328)
+  0.23      7.47     0.02                             AES_192_Key_Expansion (aes_key_expansion.c:118 @ 4025e2)
+  0.23      7.49     0.02                             AES_Encrypt (aes_encryption.c:16 @ 40205d)
+  0.23      7.51     0.02                             AES_Proc.omp_fn.1 (hash.c:114 @ 400e60)
+  0.23      7.53     0.02                             F64_mult_efficient (field_op.h:42 @ 4010a9)
+  0.23      7.55     0.02                             F64_mult_efficient (field_op.h:42 @ 4012ac)
+  0.23      7.57     0.02                             STD_Post_Proc.omp_fn.2 (hash.c:237 @ 401129)
+  0.23      7.59     0.02                             STD_Pre_Proc.omp_fn.3 (hash.c:186 @ 4011c0)
+  0.23      7.61     0.02                             STD_Pre_Proc.omp_fn.3 (hash.c:179 @ 401233)
+  0.23      7.63     0.02                             STD_Pre_Proc.omp_fn.3 (hash.c:184 @ 40132d)
+  0.23      7.65     0.02                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4021b9)
+  0.23      7.67     0.02                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4023ec)
+  0.23      7.69     0.02                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4024d0)
+  0.23      7.71     0.02                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4025dc)
+  0.23      7.73     0.02                             _mm_loadu_si128 (emmintrin.h:685 @ 40200f)
+  0.23      7.75     0.02                             _mm_shuffle_epi32 (emmintrin.h:1380 @ 4025a7)
+  0.23      7.77     0.02                             _mm_shuffle_pd (emmintrin.h:885 @ 402513)
+  0.23      7.79     0.02                             _mm_slli_si128 (emmintrin.h:1155 @ 4021bf)
+  0.23      7.81     0.02                             _mm_slli_si128 (emmintrin.h:1155 @ 402233)
+  0.23      7.83     0.02                             _mm_xor_si128 (emmintrin.h:1251 @ 4021ad)
+  0.23      7.85     0.02                             _mm_xor_si128 (emmintrin.h:1251 @ 4023a4)
+  0.23      7.87     0.02                             _mm_xor_si128 (emmintrin.h:1251 @ 4023f2)
+  0.23      7.89     0.02                             _mm_xor_si128 (emmintrin.h:1251 @ 4024d6)
+  0.17      7.91     0.02                             AES_192_Key_Expansion (aes_key_expansion.c:98 @ 402462)
+  0.17      7.92     0.02                             AES_Encrypt (aes_encryption.c:11 @ 40200c)
+  0.17      7.94     0.02                             F64_mult_efficient (field_op.h:32 @ 400f89)
+  0.17      7.95     0.02                             F64_mult_efficient (field_op.h:34 @ 400f8c)
+  0.17      7.97     0.02                             STD_Post_Proc (hash.c:228 @ 401c16)
+  0.17      7.98     0.02                             STD_Post_Proc (hash.c:241 @ 401c3d)
+  0.17      8.00     0.02                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402388)
+  0.17      8.01     0.02                             _mm_clmulepi64_si128 (wmmintrin.h:108 @ 400f05)
+  0.17      8.03     0.02                             _mm_xor_si128 (emmintrin.h:1251 @ 40238e)
+  0.12      8.04     0.01                             AES_128_Key_Expansion (aes_key_expansion.c:20 @ 402101)
+  0.12      8.05     0.01                             AES_128_Key_Expansion (aes_key_expansion.c:25 @ 40211a)
+  0.12      8.06     0.01                             AES_192_Key_Expansion (aes_key_expansion.c:78 @ 402351)
+  0.12      8.07     0.01                             AES_192_Key_Expansion (aes_key_expansion.c:122 @ 402369)
+  0.12      8.08     0.01                             AES_Encrypt (aes_encryption.c:4 @ 402021)
+  0.12      8.09     0.01                             F64_mult_efficient (field_op.h:42 @ 400fa8)
+  0.12      8.10     0.01                             F64_mult_efficient (field_op.h:32 @ 401004)
+  0.12      8.11     0.01                             F64_mult_efficient (field_op.h:38 @ 40102a)
+  0.12      8.12     0.01                             F64_mult_efficient (field_op.h:28 @ 401068)
+  0.12      8.13     0.01                             F64_mult_efficient (field_op.h:38 @ 4010a3)
+  0.12      8.14     0.01                             F64_mult_efficient (field_op.h:30 @ 4010f1)
+  0.12      8.15     0.01                             F64_mult_efficient (field_op.h:32 @ 4010f5)
+  0.12      8.16     0.01                             F64_mult_efficient (field_op.h:38 @ 401114)
+  0.12      8.17     0.01                             F64_mult_efficient (field_op.h:42 @ 401126)
+  0.12      8.18     0.01                             F64_mult_efficient (field_op.h:38 @ 4012a6)
+  0.12      8.19     0.01                             F64_mult_efficient (field_op.h:28 @ 4012f1)
+  0.12      8.20     0.01                             F64_mult_efficient (field_op.h:32 @ 4012fd)
+  0.12      8.21     0.01                             F64_mult_efficient (field_op.h:34 @ 40131c)
+  0.12      8.22     0.01                             FIN_Post_Proc.omp_fn.4 (hash.c:255 @ 40136c)
+  0.12      8.23     0.01                             STD_Pre_Proc (hash.c:179 @ 401a0a)
+  0.12      8.24     0.01                             STD_Pre_Proc.omp_fn.3 (hash.c:186 @ 40122c)
+  0.12      8.25     0.01                             STD_Pre_Proc.omp_fn.3 (hash.c:182 @ 40124b)
+  0.12      8.26     0.01                             STD_Step (hash.c:336 @ 401b78)
+  0.12      8.27     0.01                             STD_Step (hash.c:336 @ 401bd2)
+  0.12      8.28     0.01                             _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402114)
+  0.12      8.29     0.01                             _mm_clmulepi64_si128 (wmmintrin.h:108 @ 401172)
+  0.12      8.30     0.01                             _mm_loadu_si128 (emmintrin.h:685 @ 4020fd)
+  0.12      8.31     0.01                             _mm_loadu_si128 (emmintrin.h:685 @ 402360)
+  0.12      8.32     0.01                             _mm_shuffle_epi32 (emmintrin.h:1380 @ 40226b)
+  0.12      8.33     0.01                             _mm_shuffle_epi32 (emmintrin.h:1380 @ 40229e)
+  0.12      8.34     0.01                             _mm_shuffle_epi32 (emmintrin.h:1380 @ 4024a7)
+  0.12      8.35     0.01                             _mm_shuffle_epi32 (emmintrin.h:1380 @ 4024df)
+  0.12      8.36     0.01                             _mm_shuffle_pd (emmintrin.h:885 @ 4025a3)
+  0.12      8.37     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 402200)
+  0.12      8.38     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 402266)
+  0.12      8.39     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 402299)
+  0.12      8.40     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 4023d0)
+  0.12      8.41     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 402568)
+  0.12      8.42     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 402213)
+  0.12      8.43     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 4024e4)
+  0.12      8.44     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 4024f5)
+  0.12      8.45     0.01                             merkle_damgard (hash.c:419 @ 401fe0)
+  0.06      8.45     0.01                             AES_128_Key_Expansion (aes_key_expansion.c:56 @ 402131)
+  0.06      8.46     0.01                             AES_192_Key_Expansion (aes_key_expansion.c:89 @ 4023be)
+  0.06      8.46     0.01                             AES_Encrypt (aes_encryption.c:11 @ 402013)
+  0.06      8.47     0.01                             AES_Encrypt (aes_encryption.c:4 @ 40201b)
+  0.06      8.47     0.01                             AES_Encrypt (aes_encryption.c:11 @ 40201e)
+  0.06      8.48     0.01                             AES_Proc.omp_fn.1 (hash.c:92 @ 400e76)
+  0.06      8.48     0.01                             AES_Proc.omp_fn.1 (hash.c:96 @ 400e80)
+  0.06      8.49     0.01                             AES_Proc.omp_fn.1 (hash.c:106 @ 400ec0)
+  0.06      8.49     0.01                             F64_mult_efficient (field_op.h:30 @ 400ff5)
+  0.06      8.50     0.01                             F64_mult_efficient (field_op.h:29 @ 400ff8)
+  0.06      8.50     0.01                             F64_mult_efficient (field_op.h:30 @ 40106e)
+  0.06      8.51     0.01                             F64_mult_efficient (field_op.h:29 @ 401071)
+  0.06      8.51     0.01                             F64_mult_efficient (field_op.h:30 @ 401079)
+  0.06      8.52     0.01                             F64_mult_efficient (field_op.h:32 @ 40107d)
+  0.06      8.52     0.01                             F64_mult_efficient (field_op.h:28 @ 4010e0)
+  0.06      8.53     0.01                             F64_mult_efficient (field_op.h:36 @ 401222)
+  0.06      8.53     0.01                             F64_mult_efficient (field_op.h:38 @ 401226)
+  0.06      8.54     0.01                             F64_mult_efficient (field_op.h:32 @ 401280)
+  0.06      8.54     0.01                             F64_mult_efficient (field_op.h:34 @ 401290)
+  0.06      8.55     0.01                             F64_mult_efficient (field_op.h:35 @ 401293)
+  0.06      8.55     0.01                             F64_mult_efficient (field_op.h:28 @ 4012e8)
+  0.06      8.56     0.01                             F64_mult_efficient (field_op.h:29 @ 4012eb)
+  0.06      8.56     0.01                             F64_mult_efficient (field_op.h:38 @ 40130a)
+  0.06      8.57     0.01                             F64_mult_efficient (field_op.h:32 @ 40130e)
+  0.06      8.57     0.01                             F64_mult_efficient (field_op.h:36 @ 401323)
+  0.06      8.58     0.01                             F64_mult_efficient (field_op.h:38 @ 401327)
+  0.06      8.58     0.01                             FIRST_Pre_Proc.omp_fn.0 (hash.c:138 @ 400bf0)
+  0.06      8.59     0.01                             STD_Pre_Proc (hash.c:179 @ 4019b5)
+  0.06      8.59     0.01                             _mm_extract_epi64 (smmintrin.h:455 @ 401286)
+  0.06      8.60     0.01                             _mm_shuffle_epi32 (emmintrin.h:1380 @ 402455)
+  0.06      8.60     0.01                             _mm_shuffle_epi32 (emmintrin.h:1380 @ 40249a)
+  0.06      8.61     0.01                             _mm_shuffle_epi32 (emmintrin.h:1380 @ 402541)
+  0.06      8.61     0.01                             _mm_shuffle_pd (emmintrin.h:885 @ 40245a)
+  0.06      8.62     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 40214f)
+  0.06      8.62     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 40237a)
+  0.06      8.63     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 4023c7)
+  0.06      8.63     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 40241a)
+  0.06      8.64     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 40248b)
+  0.06      8.64     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 402532)
+  0.06      8.65     0.01                             _mm_slli_si128 (emmintrin.h:1155 @ 402575)
+  0.06      8.65     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 40213e)
+  0.06      8.66     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 402147)
+  0.06      8.66     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 40237f)
+  0.06      8.67     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 402416)
+  0.06      8.67     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 40245e)
+  0.06      8.68     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 402487)
+  0.06      8.68     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 40249f)
+  0.06      8.69     0.01                             _mm_xor_si128 (emmintrin.h:1251 @ 402546)
+  0.06      8.69     0.01                             main (prof.c:12 @ 400bc7)
+  0.06      8.70     0.01                             merkle_damgard (hash.c:407 @ 4019ae)
+  0.00      8.70     0.00  4288611     0.00     0.00  AES_192_Key_Expansion (aes_key_expansion.c:78 @ 402340)
+  0.00      8.70     0.00  4170697     0.00     0.00  main (prof.c:7 @ 400b80)
+  0.00      8.70     0.00   100000     0.00     0.00  merkle_damgard (hash.c:383 @ 401530)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.11% of 8.70 seconds
+
+index % time    self  children    called     name
+                0.00    0.00 2515346/16544603     AES_Proc.omp_fn.1 (hash.c:98 @ 400e90) [18]
+                0.01    0.00 6511078/16544603     AES_Proc.omp_fn.1 (hash.c:106 @ 400ec0) [78]
+                0.01    0.00 7518179/16544603     AES_Proc.omp_fn.1 (hash.c:114 @ 400e60) [38]
+[45]     0.3    0.03    0.00 16544603         AES_Encrypt (aes_encryption.c:5 @ 401ff0) [45]
+-----------------------------------------------
+                0.01    0.00 4037165/11469786     AES_Proc.omp_fn.1 (hash.c:114 @ 400e60) [38]
+                0.01    0.00 7432621/11469786     AES_Proc.omp_fn.1 (hash.c:98 @ 400e90) [18]
+[55]     0.2    0.02    0.00 11469786         AES_128_Key_Expansion (aes_key_expansion.c:20 @ 4020f0) [55]
+-----------------------------------------------
+                0.00    0.00 4288611/4288611     AES_Proc.omp_fn.1 (hash.c:106 @ 400ec0) [78]
+[179]    0.0    0.00    0.00 4288611         AES_192_Key_Expansion (aes_key_expansion.c:78 @ 402340) [179]
+-----------------------------------------------
+                0.00    0.00    2445/4170697     AES_Proc (hash.c:92 @ 40168a) [216]
+                0.00    0.00    3942/4170697     STD_Post_Proc (hash.c:228 @ 4018ee) [476]
+                0.00    0.00    4983/4170697     FIN_Post_Proc (hash.c:255 @ 401f13) [420]
+                0.00    0.00    5903/4170697     STD_Pre_Proc (hash.c:179 @ 401d00) [501]
+                0.00    0.00   20406/4170697     AES_Proc (hash.c:92 @ 401840) [222]
+                0.00    0.00   21813/4170697     AES_Proc (hash.c:92 @ 401e6c) [237]
+                0.00    0.00  443853/4170697     STD_Post_Proc (hash.c:228 @ 401c16) [83]
+                0.00    0.00  775416/4170697     STD_Pre_Proc (hash.c:179 @ 401a0a) [107]
+                0.00    0.00 2891936/4170697     AES_Proc (hash.c:92 @ 401b1c) [23]
+[180]    0.0    0.00    0.00 4170697         main (prof.c:7 @ 400b80) [180]
+-----------------------------------------------
+                0.00    0.00  100000/100000      main (prof.c:11 @ 400bb0) [526]
+[181]    0.0    0.00    0.00  100000         merkle_damgard (hash.c:383 @ 401530) [181]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [55] AES_128_Key_Expansion (aes_key_expansion.c:20 @ 4020f0) [152] F64_mult_efficient (field_op.h:32 @ 40130e) [43] _mm_extract_epi64 (smmintrin.h:455 @ 4010d9)
+  [88] AES_128_Key_Expansion (aes_key_expansion.c:20 @ 402101) [105] F64_mult_efficient (field_op.h:34 @ 40131c) [159] _mm_extract_epi64 (smmintrin.h:455 @ 401286)
+  [89] AES_128_Key_Expansion (aes_key_expansion.c:25 @ 40211a) [153] F64_mult_efficient (field_op.h:36 @ 401323) [69] _mm_loadu_si128 (emmintrin.h:685 @ 40200f)
+ [130] AES_128_Key_Expansion (aes_key_expansion.c:56 @ 402131) [154] F64_mult_efficient (field_op.h:38 @ 401327) [115] _mm_loadu_si128 (emmintrin.h:685 @ 4020fd)
+  [56] AES_128_Key_Expansion (aes_key_expansion.c:56 @ 402328) [106] FIN_Post_Proc.omp_fn.4 (hash.c:255 @ 40136c) [27] _mm_loadu_si128 (emmintrin.h:685 @ 40234d)
+ [179] AES_192_Key_Expansion (aes_key_expansion.c:78 @ 402340) [155] FIRST_Pre_Proc.omp_fn.0 (hash.c:138 @ 400bf0) [116] _mm_loadu_si128 (emmintrin.h:685 @ 402360)
+  [90] AES_192_Key_Expansion (aes_key_expansion.c:78 @ 402351) [5] FIRST_Pre_Proc.omp_fn.0 (hash.c:138 @ 400de1) [117] _mm_shuffle_epi32 (emmintrin.h:1380 @ 40226b)
+  [91] AES_192_Key_Expansion (aes_key_expansion.c:122 @ 402369) [83] STD_Post_Proc (hash.c:228 @ 401c16) [118] _mm_shuffle_epi32 (emmintrin.h:1380 @ 40229e)
+ [131] AES_192_Key_Expansion (aes_key_expansion.c:89 @ 4023be) [84] STD_Post_Proc (hash.c:241 @ 401c3d) [160] _mm_shuffle_epi32 (emmintrin.h:1380 @ 402455)
+  [79] AES_192_Key_Expansion (aes_key_expansion.c:98 @ 402462) [4] STD_Post_Proc.omp_fn.2 (hash.c:228 @ 400ee0) [161] _mm_shuffle_epi32 (emmintrin.h:1380 @ 40249a)
+  [57] AES_192_Key_Expansion (aes_key_expansion.c:118 @ 4025e2) [8] STD_Post_Proc.omp_fn.2 (hash.c:228 @ 400f09) [119] _mm_shuffle_epi32 (emmintrin.h:1380 @ 4024a7)
+  [39] AES_Decrypt (aes_encryption.c:30 @ 4020dd) [31] STD_Post_Proc.omp_fn.2 (hash.c:231 @ 400f40) [120] _mm_shuffle_epi32 (emmintrin.h:1380 @ 4024df)
+  [45] AES_Encrypt (aes_encryption.c:5 @ 401ff0) [32] STD_Post_Proc.omp_fn.2 (hash.c:228 @ 400faf) [162] _mm_shuffle_epi32 (emmintrin.h:1380 @ 402541)
+  [80] AES_Encrypt (aes_encryption.c:11 @ 40200c) [33] STD_Post_Proc.omp_fn.2 (hash.c:233 @ 400fc8) [70] _mm_shuffle_epi32 (emmintrin.h:1380 @ 4025a7)
+ [132] AES_Encrypt (aes_encryption.c:11 @ 402013) [15] STD_Post_Proc.omp_fn.2 (hash.c:235 @ 401040) [163] _mm_shuffle_pd (emmintrin.h:885 @ 40245a)
+ [133] AES_Encrypt (aes_encryption.c:4 @ 40201b) [14] STD_Post_Proc.omp_fn.2 (hash.c:237 @ 4010b8) [71] _mm_shuffle_pd (emmintrin.h:885 @ 402513)
+ [134] AES_Encrypt (aes_encryption.c:11 @ 40201e) [61] STD_Post_Proc.omp_fn.2 (hash.c:237 @ 401129) [121] _mm_shuffle_pd (emmintrin.h:885 @ 4025a3)
+  [92] AES_Encrypt (aes_encryption.c:4 @ 402021) [7] STD_Post_Proc.omp_fn.2 (hash.c:228 @ 401134) [164] _mm_slli_si128 (emmintrin.h:1155 @ 40214f)
+  [58] AES_Encrypt (aes_encryption.c:16 @ 40205d) [156] STD_Pre_Proc (hash.c:179 @ 4019b5) [72] _mm_slli_si128 (emmintrin.h:1155 @ 4021bf)
+  [23] AES_Proc (hash.c:92 @ 401b1c) [107] STD_Pre_Proc (hash.c:179 @ 401a0a) [53] _mm_slli_si128 (emmintrin.h:1155 @ 4021f2)
+   [2] AES_Proc.omp_fn.1 (hash.c:92 @ 400df0) [1] STD_Pre_Proc.omp_fn.3 (hash.c:179 @ 401140) [122] _mm_slli_si128 (emmintrin.h:1155 @ 402200)
+  [10] AES_Proc.omp_fn.1 (hash.c:112 @ 400e50) [28] STD_Pre_Proc.omp_fn.3 (hash.c:179 @ 40116f) [73] _mm_slli_si128 (emmintrin.h:1155 @ 402233)
+  [38] AES_Proc.omp_fn.1 (hash.c:114 @ 400e60) [16] STD_Pre_Proc.omp_fn.3 (hash.c:179 @ 401182) [123] _mm_slli_si128 (emmintrin.h:1155 @ 402266)
+ [135] AES_Proc.omp_fn.1 (hash.c:92 @ 400e76) [62] STD_Pre_Proc.omp_fn.3 (hash.c:186 @ 4011c0) [36] _mm_slli_si128 (emmintrin.h:1155 @ 40228b)
+ [136] AES_Proc.omp_fn.1 (hash.c:96 @ 400e80) [108] STD_Pre_Proc.omp_fn.3 (hash.c:186 @ 40122c) [124] _mm_slli_si128 (emmintrin.h:1155 @ 402299)
+  [18] AES_Proc.omp_fn.1 (hash.c:98 @ 400e90) [63] STD_Pre_Proc.omp_fn.3 (hash.c:179 @ 401233) [48] _mm_slli_si128 (emmintrin.h:1155 @ 4022be)
+  [19] AES_Proc.omp_fn.1 (hash.c:104 @ 400eb0) [109] STD_Pre_Proc.omp_fn.3 (hash.c:182 @ 40124b) [165] _mm_slli_si128 (emmintrin.h:1155 @ 40237a)
+  [78] AES_Proc.omp_fn.1 (hash.c:106 @ 400ec0) [64] STD_Pre_Proc.omp_fn.3 (hash.c:184 @ 40132d) [166] _mm_slli_si128 (emmintrin.h:1155 @ 4023c7)
+   [6] AES_Proc.omp_fn.1 (hash.c:92 @ 400edb) [110] STD_Step (hash.c:336 @ 401b78) [125] _mm_slli_si128 (emmintrin.h:1155 @ 4023d0)
+  [81] F64_mult_efficient (field_op.h:32 @ 400f89) [111] STD_Step (hash.c:336 @ 401bd2) [167] _mm_slli_si128 (emmintrin.h:1155 @ 40241a)
+  [82] F64_mult_efficient (field_op.h:34 @ 400f8c) [3] _mm_aesenc_si128 (wmmintrin.h:62 @ 402030) [168] _mm_slli_si128 (emmintrin.h:1155 @ 40248b)
+  [93] F64_mult_efficient (field_op.h:42 @ 400fa8) [40] _mm_aesenclast_si128 (wmmintrin.h:70 @ 402046) [169] _mm_slli_si128 (emmintrin.h:1155 @ 402532)
+ [137] F64_mult_efficient (field_op.h:30 @ 400ff5) [113] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402114) [126] _mm_slli_si128 (emmintrin.h:1155 @ 402568)
+ [138] F64_mult_efficient (field_op.h:29 @ 400ff8) [46] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402153) [170] _mm_slli_si128 (emmintrin.h:1155 @ 402575)
+  [94] F64_mult_efficient (field_op.h:32 @ 401004) [24] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402186) [49] _mm_xor_si128 (emmintrin.h:1251 @ 402015)
+  [95] F64_mult_efficient (field_op.h:38 @ 40102a) [65] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4021b9) [171] _mm_xor_si128 (emmintrin.h:1251 @ 40213e)
+  [13] F64_mult_efficient (field_op.h:42 @ 401030) [51] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4021ec) [172] _mm_xor_si128 (emmintrin.h:1251 @ 402147)
+  [96] F64_mult_efficient (field_op.h:28 @ 401068) [29] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 40221f) [50] _mm_xor_si128 (emmintrin.h:1251 @ 40217a)
+ [139] F64_mult_efficient (field_op.h:30 @ 40106e) [22] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402252) [74] _mm_xor_si128 (emmintrin.h:1251 @ 4021ad)
+ [140] F64_mult_efficient (field_op.h:29 @ 401071) [34] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402285) [127] _mm_xor_si128 (emmintrin.h:1251 @ 402213)
+ [141] F64_mult_efficient (field_op.h:30 @ 401079) [47] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4022b8) [173] _mm_xor_si128 (emmintrin.h:1251 @ 40237f)
+ [142] F64_mult_efficient (field_op.h:32 @ 40107d) [41] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4022ee) [87] _mm_xor_si128 (emmintrin.h:1251 @ 40238e)
+  [97] F64_mult_efficient (field_op.h:38 @ 4010a3) [85] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402388) [75] _mm_xor_si128 (emmintrin.h:1251 @ 4023a4)
+  [59] F64_mult_efficient (field_op.h:42 @ 4010a9) [66] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4023ec) [76] _mm_xor_si128 (emmintrin.h:1251 @ 4023f2)
+ [143] F64_mult_efficient (field_op.h:28 @ 4010e0) [52] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 40242c) [174] _mm_xor_si128 (emmintrin.h:1251 @ 402416)
+  [98] F64_mult_efficient (field_op.h:30 @ 4010f1) [35] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402490) [54] _mm_xor_si128 (emmintrin.h:1251 @ 402432)
+  [99] F64_mult_efficient (field_op.h:32 @ 4010f5) [67] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4024d0) [175] _mm_xor_si128 (emmintrin.h:1251 @ 40245e)
+ [100] F64_mult_efficient (field_op.h:38 @ 401114) [20] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 402537) [176] _mm_xor_si128 (emmintrin.h:1251 @ 402487)
+ [101] F64_mult_efficient (field_op.h:42 @ 401126) [21] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 40257a) [37] _mm_xor_si128 (emmintrin.h:1251 @ 402496)
+ [144] F64_mult_efficient (field_op.h:36 @ 401222) [68] _mm_aeskeygenassist_si128 (wmmintrin.h:88 @ 4025dc) [177] _mm_xor_si128 (emmintrin.h:1251 @ 40249f)
+ [145] F64_mult_efficient (field_op.h:38 @ 401226) [86] _mm_clmulepi64_si128 (wmmintrin.h:108 @ 400f05) [77] _mm_xor_si128 (emmintrin.h:1251 @ 4024d6)
+ [146] F64_mult_efficient (field_op.h:32 @ 401280) [25] _mm_clmulepi64_si128 (wmmintrin.h:108 @ 400f43) [128] _mm_xor_si128 (emmintrin.h:1251 @ 4024e4)
+ [147] F64_mult_efficient (field_op.h:34 @ 401290) [26] _mm_clmulepi64_si128 (wmmintrin.h:108 @ 400fcb) [129] _mm_xor_si128 (emmintrin.h:1251 @ 4024f5)
+ [148] F64_mult_efficient (field_op.h:35 @ 401293) [11] _mm_clmulepi64_si128 (wmmintrin.h:108 @ 401043) [178] _mm_xor_si128 (emmintrin.h:1251 @ 402546)
+ [102] F64_mult_efficient (field_op.h:38 @ 4012a6) [9] _mm_clmulepi64_si128 (wmmintrin.h:108 @ 4010bc) [180] main (prof.c:7 @ 400b80)
+  [60] F64_mult_efficient (field_op.h:42 @ 4012ac) [114] _mm_clmulepi64_si128 (wmmintrin.h:108 @ 401172) [157] main (prof.c:12 @ 400bc7)
+ [149] F64_mult_efficient (field_op.h:28 @ 4012e8) [12] _mm_clmulepi64_si128 (wmmintrin.h:108 @ 4011c3) [181] merkle_damgard (hash.c:383 @ 401530)
+ [150] F64_mult_efficient (field_op.h:29 @ 4012eb) [30] _mm_clmulepi64_si128 (wmmintrin.h:108 @ 40124e) [158] merkle_damgard (hash.c:407 @ 4019ae)
+ [103] F64_mult_efficient (field_op.h:28 @ 4012f1) [17] _mm_clmulepi64_si128 (wmmintrin.h:108 @ 4012c3) [112] merkle_damgard (hash.c:419 @ 401fe0)
+ [104] F64_mult_efficient (field_op.h:32 @ 4012fd) [42] _mm_extract_epi64 (smmintrin.h:455 @ 400f60)
+ [151] F64_mult_efficient (field_op.h:38 @ 40130a) [44] _mm_extract_epi64 (smmintrin.h:455 @ 401061)
